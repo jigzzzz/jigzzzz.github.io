@@ -4,27 +4,25 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<title>Foodish</title>
 </head>
-<body>
-	<h2>Add New Food</h2>
+<body class="secondary">
+	<div class="title"> 
+		<img src="../assets/shortcake.gif" width="50" height="50">
+		<h1 class="header-title">Welcome to Foodish</h1>
+		<img src="../assets/pancake.gif" width="50" height="50">
+	</div>
+
 	<form>
-		<table>
-			<tr>
-				<td>
-					<label for="food-name">Title Food</label>
-				</td>
-				<td>
-					<input type="text" name="title" placeholder="Input your food name"><br>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<label for="food-name">Food Price</label>
-				</td>
-				<td>
-					<input type="text" name="price"placeholder="Input your food price">
-				</td>
-			</tr>
-		</table>
+		<div class="input-form"> 
+			<label for="food-name"><b>Food Name</b></label>
+			<input type="text" name="title" placeholder="Input your food name"><br>
+		</div>
+		<br>
+		<div class="input-form"> 
+			<label for="food-name"><b>Food Price</b></label>
+			<input type="text" name="price"placeholder="Input your food price">
+		</div>
+		<br>
+		<input type="submit" name="submit" class="btn" id="btn-add-food">
 	</form>
 </body>
 </html> 
