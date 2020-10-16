@@ -14,15 +14,45 @@
 	<form>
 		<div class="input-form"> 
 			<label for="food-name"><b>Food Name</b></label>
-			<input type="text" name="title" placeholder="Input your food name"><br>
+			<input type="text" name="title" id="input-food-title" placeholder="Input your food name"><br>
 		</div>
 		<br>
 		<div class="input-form"> 
 			<label for="food-name"><b>Food Price</b></label>
-			<input type="text" name="price"placeholder="Input your food price">
+			<input type="text" name="price" id="input-food-price" placeholder="Input your food price">
 		</div>
 		<br>
-		<input type="submit" name="submit" class="btn" id="btn-add-food">
+		<input type="submit" name="submit" class="btn right" id="btn-add-food">
+		<a href="../index.html" class="btn right">Back</a>
 	</form>
+	<script type="text/javascript">
+		let foods = [
+			{
+				'name': "Burger",
+				'price': 20000
+			},
+			{
+				'name': "Pancake",
+				'price': 29000
+			},
+			{
+				'name': "Steak",
+				'price': 49000
+			}
+		]
+		let params = new URLSearchParams(window.location.search);
+		let idx = params.get('id');
+		let type = params.get('type');
+		if(idx !== null) {
+			document.querySelector("#input-food-title").value = foods[idx-1].name;
+			document.querySelector("#input-food-price").value = foods[idx-1].price;
+		}
+
+		if (type == "show") {
+			document.querySelector("#btn-add-food").style.display="none";
+			document.querySelector("#input-food-title").disabled=true;
+			document.querySelector("#input-food-price").disabled=true;
+		}
+	</script>
 </body>
 </html> 

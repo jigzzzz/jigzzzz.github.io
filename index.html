@@ -20,19 +20,37 @@
 				<th>Action</th>
 			</tr>
 		</thead>
-		<tbody>
-			<tr>
-				<td class="food-title">Nasi Goreng</td>
-				<td class="food-price">10000.0</td>
+		<tbody id="food-table">
+			<tr class="template-row">
+				<td class="food-title">Burger</td>
+				<td class="food-price">Rp20000</td>
 				<td>
-					<a href="#"><img class="icon" src="assets/show.png" alt="Show Button"></a>
-					<a href="#"><img class="icon" src="assets/edit.png" alt="Edit Button"></a>
+					<a href="html/addfood.html?id=1&type=show"><img class="icon" src="assets/show.png" alt="Show Button"></a>
+					<a href="html/addfood.html?id=1&type=edit"><img class="icon" src="assets/edit.png" alt="Edit Button"></a>
+					<a href="#"><img class="icon" src="assets/delete.png" alt="Delete Button"></a>
+				</td>
+			</tr>
+			<tr class="template-row">
+				<td class="food-title">Pancake</td>
+				<td class="food-price">Rp29000</td>
+				<td>
+					<a href="html/addfood.html?id=2&type=show"><img class="icon" src="assets/show.png" alt="Show Button"></a>
+					<a href="html/addfood.html?id=2&type=edit"><img class="icon" src="assets/edit.png" alt="Edit Button"></a>
+					<a href="#"><img class="icon" src="assets/delete.png" alt="Delete Button"></a>
+				</td>
+			</tr>
+			<tr class="template-row">
+				<td class="food-title">Steak</td>
+				<td class="food-price">Rp49000</td>
+				<td>
+					<a href="html/addfood.html?id=3&type=show"><img class="icon" src="assets/show.png" alt="Show Button"></a>
+					<a href="html/addfood.html?id=3&type=edit"><img class="icon" src="assets/edit.png" alt="Edit Button"></a>
 					<a href="#"><img class="icon" src="assets/delete.png" alt="Delete Button"></a>
 				</td>
 			</tr>
 		</tbody>
 	</table>
 	<br>
-	<a href="html/addfood.html" class="btn right" id="btn-add-food">New Food</a>
+	<a href="html/addfood.html" class="btn" id="btn-add-food">New Food</a>
 </body>
 </html> 

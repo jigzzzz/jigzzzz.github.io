@@ -36,6 +36,7 @@ body {
 	box-shadow: 8px 7px 10px grey;
 	transition: 1s;
 	outline-width: 0;
+	font-size: 14px;
 }
 
 .btn:hover {
@@ -86,7 +87,8 @@ body {
 	outline-width: 0;
 }
 
-#btn-add-food {
+.right {
+	margin-left: 20px;
 	float: right;
 }
 
