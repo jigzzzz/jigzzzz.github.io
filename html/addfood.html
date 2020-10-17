@@ -22,7 +22,7 @@
 			<input type="text" name="price" id="input-food-price" placeholder="Input your food price">
 		</div>
 		<br>
-		<input type="submit" name="submit" class="btn right" id="btn-add-food">
+		<a href="../index.html" class="btn right" id="btn-add-food">Submit</a>
 		<a href="../index.html" class="btn right">Back</a>
 	</form>
 	<script type="text/javascript">
@@ -52,11 +52,6 @@
 			document.querySelector("#btn-add-food").style.display="none";
 			document.querySelector("#input-food-title").disabled=true;
 			document.querySelector("#input-food-price").disabled=true;
-		}
-
-		function goToMenu() {
-			window.location.href = "../index.html";
-			window.location.reload();
 		}
 	</script>
 </body>
